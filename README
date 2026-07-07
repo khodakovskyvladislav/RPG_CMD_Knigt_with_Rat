@@ -1,0 +1,22 @@
+game/
+│
+├── main.py
+├── engine/
+│   ├── battle.py
+│   ├── inventory.py
+│   ├── world.py
+│   └── save.py
+│
+├── entities/
+│   ├── player.py
+│   ├── enemy.py
+│   ├── npc.py
+│   └── item.py
+│
+├── data/
+│   ├── enemies.json
+│   ├── items.json
+│   └── skills.json
+│
+└── ui/
+    └── menu.py
