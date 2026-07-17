@@ -13,9 +13,10 @@ def main_menu():
         choice = input("> ")
 
         if choice == "1":
-            hero = choose_class() #
+            hero = choose_class()
             if hero:
-                print(f"Вы создали персонажа: {hero.name}, класс: {hero.player_class}")
+                print(f"Вы создали персонажа: {hero.name},\
+                     класс: {hero.player_class}")
                 # Здесь можно добавить дальнейшую логику игры с созданным персонажем
         elif choice == "2":
             print("Загрузка")
@@ -34,4 +35,4 @@ def main_menu():
             print("Неизвестная команда")
 
 
-main_menu()
+main_menu() #

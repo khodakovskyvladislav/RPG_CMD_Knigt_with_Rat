@@ -1,14 +1,15 @@
-# нужно выводить меню выбора персонажа текстом, а не просто цифрами, чтобы игрок понимал, что он выбирает. напишы choice == "4" вернуться в главное меню
 from entities.player import Player
+import entities.player
 
+print(entities.player.__file__)
 
-def choose_class():
-    print("Выберите класс")
-    print("1. Воин")
-    print("2. Маг")
-    print("3. Лучник")
-    print("4. Вернуться в главное меню")
-    choice = input("> ")
+def choose_class() -> Player | None:
+    print('Выберите класс')
+    print('1. Воин')
+    print('2. Маг')
+    print('3. Лучник')
+    print('4. Вернуться в главное меню')
+    choice = input(' > ')
 
     if choice == "1":
         print("Вы выбрали воина")

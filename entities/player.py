@@ -1,15 +1,15 @@
-# сделать клас создания персонажей. базовые первые три это воин маг и лучник. потом можно добавить других.
+# сделать клас создания персонажей. базовые первые три это воин маг и лучник. потом можно добавить других. добваь анотации
 class Player:
-    def __init__(self, name, player_class):
+    def __init__(self, name: str, player_class: str, level: int = 1, experience: int = 0, health: int = 100, mana: int = 50, strength: int = 10, agility: int = 10, intelligence: int = 10):
         self.name = name
         self.player_class = player_class
-        self.level = 1
-        self.experience = 0
-        self.health = 100
-        self.mana = 50
-        self.strength = 10
-        self.agility = 10
-        self.intelligence = 10
+        self.level = level
+        self.experience = experience
+        self.health = health
+        self.mana = mana
+        self.strength = strength
+        self.agility = agility
+        self.intelligence = intelligence
 
     def level_up(self):
         self.level += 1
