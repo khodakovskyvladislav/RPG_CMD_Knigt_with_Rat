@@ -1,7 +1,8 @@
 from entities.player import Player
-import entities.player
 
-print(entities.player.__file__)
+import inspect
+
+print(inspect.signature(Player.__init__))
 
 def choose_class() -> Player | None:
     print('Выберите класс')

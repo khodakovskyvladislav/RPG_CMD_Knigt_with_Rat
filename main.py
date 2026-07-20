@@ -1,5 +1,5 @@
 from menuchoice.newgame import choose_class
-
+from loop.gameloop import game_loop
 
 def main_menu():
     while True:
@@ -15,9 +15,8 @@ def main_menu():
         if choice == "1":
             hero = choose_class()
             if hero:
-                print(f"Вы создали персонажа: {hero.name},\
-                     класс: {hero.player_class}")
-                # Здесь можно добавить дальнейшую логику игры с созданным персонажем
+                game_loop(hero)
+                
         elif choice == "2":
             print("Загрузка")
 
